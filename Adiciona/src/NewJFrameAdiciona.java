@@ -1,3 +1,6 @@
+
+import adiciona.soma;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -107,10 +110,15 @@ public class NewJFrameAdiciona extends javax.swing.JFrame {
     int n2 = Integer.parseInt(jTextField2.getText());
     
     // Realiza a soma dos números
-    int resultado = n1 + n2;
+    //int resultado = n1 + n2;
+    
+    soma mysoma = new soma();
+    mysoma.setN1(n1);
+    mysoma.setN2(n2);
+    
     
     // Define o resultado no campo de texto correspondente
-    jTextField3.setText(String.valueOf(resultado));
+    jTextField3.setText(String.valueOf(mysoma.soma()));
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

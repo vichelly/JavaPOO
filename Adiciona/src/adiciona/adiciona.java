@@ -22,5 +22,6 @@ class adiciona {
         
         // Define a visibilidade do JFrame como verdadeira
         frame.setVisible(true);
+        
     }
 }
