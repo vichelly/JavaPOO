@@ -1,15 +1,9 @@
 package model;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+import controller.PesoEmPlanetas;
 
-/**
- *
- * @author vitor.felicio
- */
-public class Jupiter {
+
+public class Jupiter extends Planet {
     private int peso;
 
     public void setPeso(int peso) {
@@ -17,6 +11,9 @@ public class Jupiter {
     }
     
     public double calculaJupiter(){
-        return (double) (peso * 2.64);
+        double response = (peso * 2.64);
+        String ResponseHist = String.valueOf(peso)+"=>"+String.valueOf(response)+"(Jupiter)";
+        PesoEmPlanetas.historico.add(ResponseHist);
+        return response;
     }
 }

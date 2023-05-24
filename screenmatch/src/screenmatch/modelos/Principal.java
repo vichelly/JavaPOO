@@ -2,7 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package screenmatch;
+package screenmatch.modelos;
+
+import java.util.ArrayList;
+import screenmatch.modelos.Filme;
+import screenmatch.modelos.Episodio;
+import screenmatch.calculos.FiltroRecomendacao;
+import screenmatch.calculos.CalculadoraDeTempo;
 
 /**
  *
@@ -60,6 +66,18 @@ public class Principal {
         episodio.setSerie(lost);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
+        
+        Filme filmedovit = new Filme();
+        filmedovit.setNome("StreetVile");
+        filmedovit.setAnoDeLancamento(2003);
+        filmedovit.avalia(10);
+        
+        ArrayList<Filme> listaDeFilme = new ArrayList<>();
+        listaDeFilme.add(meuFilme);
+        listaDeFilme.add(filmedovit);
+        listaDeFilme.add(outroFilme);
+        System.out.println("Tamanho da lista: "+listaDeFilme.size());
+        System.out.println("Primeiro filme: "+listaDeFilme.get(0));
     }
     
 }

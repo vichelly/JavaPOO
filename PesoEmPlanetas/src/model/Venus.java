@@ -1,5 +1,8 @@
 package model;
 
+import controller.PesoEmPlanetas;
+import model.Planet;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -9,7 +12,7 @@ package model;
  *
  * @author vitor.felicio
  */
-public class Venus {
+public class Venus extends Planet{
     private double peso;
     
     public void setPeso(int peso) {
@@ -17,6 +20,9 @@ public class Venus {
     }
     
     public double calculaVenus(){
-        return (double) (peso * 0.88);
+        double response = (peso * 0.88);
+        String ResponseHist = String.valueOf(peso)+"=>"+String.valueOf(response)+"(Netuno)";
+        PesoEmPlanetas.historico.add(ResponseHist);
+        return response;
     }
 }

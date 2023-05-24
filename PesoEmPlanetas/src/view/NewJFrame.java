@@ -1,6 +1,8 @@
 package view;
 
 
+import view.JFrameHistorico;
+import javax.swing.JFrame;
 import model.Venus;
 import model.Urano;
 import model.Saturno;
@@ -8,6 +10,13 @@ import model.Netuno;
 import model.Mercurio;
 import model.Marte;
 import model.Jupiter;
+import model.Jupiter;
+import model.Marte;
+import model.Mercurio;
+import model.Netuno;
+import model.Saturno;
+import model.Urano;
+import model.Venus;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -47,6 +56,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -109,6 +119,13 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        jButton8.setText("Histórico");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -145,11 +162,13 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addGap(54, 54, 54)
                         .addComponent(jButton5)))
                 .addContainerGap(33, Short.MAX_VALUE))
+            .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addComponent(jButton8)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -174,7 +193,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jButton7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton4)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         pack();
@@ -264,6 +283,18 @@ public class NewJFrame extends javax.swing.JFrame {
         jTextField2.setText(String.valueOf(netuno.calculaNetuno()));
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        //jButton8
+        // Instanciando o NewJFrame
+        JFrameHistorico frame = new JFrameHistorico();
+        
+        // Configurando o comportamento de fechamento do JFrame
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        // Exibindo o JFrame
+        frame.setVisible(true);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -307,6 +338,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;
