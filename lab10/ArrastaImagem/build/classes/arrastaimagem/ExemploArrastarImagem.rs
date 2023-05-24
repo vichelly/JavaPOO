@@ -1,0 +1,3 @@
+ExemploArrastarImagem
+ExemploArrastarImagem$1
+ExemploArrastarImagem$2
