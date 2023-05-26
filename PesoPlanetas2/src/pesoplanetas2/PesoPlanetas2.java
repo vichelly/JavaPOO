@@ -4,16 +4,18 @@
  */
 package pesoplanetas2;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author vluca
  */
 public class PesoPlanetas2 {
 
-    /**
-     * @param args the command line arguments
-     */
+    public static ArrayList<String> ListHist = new ArrayList<>();
+    
     public static void main(String[] args) {
+        
         NewJFrame frame = new NewJFrame();
         frame.setVisible(true);
     }

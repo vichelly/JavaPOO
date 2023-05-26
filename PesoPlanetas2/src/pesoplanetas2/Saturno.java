@@ -18,6 +18,7 @@ public class Saturno {
     
     public double calculaSaturno(){
         double response = (peso * 1.15);
+        PesoPlanetas2.ListHist.add(peso+"=>"+response);
         return response;
     }
 }

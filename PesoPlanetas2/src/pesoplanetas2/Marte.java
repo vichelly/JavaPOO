@@ -18,6 +18,7 @@ public class Marte {
     
     public double calculaMarte(){
         double response = (peso * 0.38);
+        PesoPlanetas2.ListHist.add(peso+"=>"+response);
         return response;
     }
 }

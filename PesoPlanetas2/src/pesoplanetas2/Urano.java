@@ -18,6 +18,7 @@ public class Urano {
     
     public double calculaUrano(){
         double response = (peso * 1.17);
+        PesoPlanetas2.ListHist.add(peso+"=>"+response);
         return response;
     }
 }

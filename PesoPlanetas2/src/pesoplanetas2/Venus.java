@@ -18,6 +18,7 @@ public class Venus {
     
     public double calculaVenus(){
         double response = (peso * 0.88);
+        PesoPlanetas2.ListHist.add(peso+"=>"+response);
         return response;
     }
 }

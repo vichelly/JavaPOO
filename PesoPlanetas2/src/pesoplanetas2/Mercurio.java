@@ -18,6 +18,7 @@ public class Mercurio {
     
     public double calculaMercurio(){
         double response = (peso * 0.37);
+        PesoPlanetas2.ListHist.add(peso+"=>"+response);
         return response;
     }
 }

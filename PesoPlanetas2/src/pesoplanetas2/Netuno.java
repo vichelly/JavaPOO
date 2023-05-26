@@ -18,6 +18,7 @@ public class Netuno {
     
     public double calculaNetuno(){
         double response = (peso * 1.18);
+        PesoPlanetas2.ListHist.add(peso+"=>"+response);
         return response;
     }
 }
